@@ -1,3 +1,6 @@
 [submodule "nvim/.config/nvim"]
 	path = nvim/.config/nvim
 	url = git@github.com:Zsmith32/kickstart.nvim.git
+[submodule "nvm/.config/nvm"]
+	path = nvm/.config/nvm
+	url = https://github.com/nvm-sh/nvm.git
