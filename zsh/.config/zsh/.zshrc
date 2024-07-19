@@ -2,7 +2,14 @@
 #
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
-PS1="%B%F{green}[%F{cyan}%n@%m %1d%F{green}]%#%k%f"
+
+#comment out to use default host 
+export ZHOST="x220"
+if [[ -z $ZHOST ]];then
+  PS1="%B%F{green}[%F{cyan}%n@%m %1d%F{green}]%#%k%f"
+else
+  PS1="%B%F{green}[%F{cyan}%n@$ZHOST %1d%F{green}]%#%k%f"
+fi
 eval "$(zoxide init zsh)"
 
 alias ls='ls --color=auto'
