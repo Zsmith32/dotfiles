@@ -1,7 +1,5 @@
 # personal dotfiles
 
-## notes to self:
-
 ### current assumptions:
 1. i3 & xorg
 2. lxde
