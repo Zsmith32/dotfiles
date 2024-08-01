@@ -8,7 +8,7 @@
 
 ### to setup:
 
-stow <dir> --target=$HOME
+stow \<dir\> --target=$HOME
 
 ### TODO:
 * maybe script stow commands? 
