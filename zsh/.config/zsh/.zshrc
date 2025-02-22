@@ -4,7 +4,7 @@
 [[ $- != *i* ]] && return
 
 #comment out to use default host 
-export ZHOST="x220"
+#export ZHOST="x220"
 if [[ -z $ZHOST ]];then
   PS1="%B%F{green}[%F{cyan}%n@%m %1d%F{green}]%#%k%f"
 else
@@ -21,7 +21,7 @@ eval $(thefuck --alias)
 
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-function mkdir {
+function mkdirc {
   command mkdir "$1" && cd "$1"
 }
 if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
