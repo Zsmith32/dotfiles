@@ -110,22 +110,24 @@ window_behavior:
       shown_on_top: false
 
 workspaces:
+  # Term
   - name: '1'
     bind_to_monitor: 1
-    keep_alive: true
+  # browser
   - name: '2'
     bind_to_monitor: 0
-    keep_alive: true
+  # chat
   - name: '3'
     bind_to_monitor: 0
-    keep_alive: true
+  # notes
   - name: '4'
-    bind_to_monitor: 1
-    keep_alive: true
+    bind_to_monitor: 0
+  # email
   - name: '5'
+    bind_to_monitor: 0
+  # manager
   - name: '6'
     bind_to_monitor: 0
-    keep_alive: true
   - name: '7'
   - name: '8'
   - name: '9'
